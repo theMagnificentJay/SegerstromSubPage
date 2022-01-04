@@ -329,6 +329,25 @@ nav {
   color: #604497;
 }
 
+.asl_img {
+  border-right: 1px solid lightgray;
+  padding-right: 15px;
+  height: 25px;
+  display: flex;
+  align-content: center;
+  margin-top: -3px;
+}
+
+.asl_wrapper {
+  display: flex;
+  align-content: center;
+  height: 25px;
+}
+
+.asl_wrapper p {
+  padding-left: 15px;
+}
+
 /* SEPARARTOR */
 .separator {
   display: flex;
