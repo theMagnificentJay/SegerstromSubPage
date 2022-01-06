@@ -1,2 +1,7 @@
 # SegerstromSubPage
-jreed segerstrom proof/test of skill/knowledge
+
+jreed segerstrom
+
+Best viewed at 1920-1880px
+
+Page is not fully responsive
