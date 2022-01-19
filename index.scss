@@ -29,12 +29,22 @@ body {
 
 // Nav
 nav {
-  @media (min-width: 992px) {
+  // Lg View
+  z-index: 2;
+  .content {
     z-index: 2;
+    background-color: #ffffff;
+  }
+  @media (min-width: 992px) {
     left: 0;
     position: fixed;
-    background-color: white;
     width: 150px;
+    .mb50 {
+      margin-bottom: 50px;
+    }
+    .mt-n25 {
+      margin-top: -25px;
+    }
     .content {
       width: 100%;
       margin: auto;
@@ -43,9 +53,9 @@ nav {
         padding-top: 35px;
       }
     }
-    .row-lg {
-      img {
-        width: 68px;
+    .nav-item {
+      .nav-btn {
+        width: 45px;
         margin: auto;
         padding-top: 70px;
       }
@@ -55,14 +65,34 @@ nav {
       }
     }
   }
+  // Sm/Md View
   @media (max-width: 991px) {
-    display: flex;
+    .content {
+      display: flex;
+      margin: 0 auto;
+      padding: 10px;
+      width: 100%;
+      align-items: center;
+      position: fixed;
+      img {
+        margin: auto;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+      .seg-logo {
+        height: 75px;
+      }
+    }
   }
 }
 // End Nav
 
 // Alert
 .alert {
+  @media (max-width: 991px) {
+    display: none;
+  }
   @media (min-width: 992px) {
     margin-left: -150px;
     margin-right: auto;
@@ -84,6 +114,9 @@ nav {
   @media (min-width: 992px) {
     margin-left: 150px;
   }
+  @media (max-width: 991px) {
+    margin-top: 70px;
+  }
 }
 // End Push Right
 
@@ -102,9 +135,22 @@ nav {
       position: absolute;
       bottom: 0;
       p {
-        font-size: 66px;
+        // Lg/Md View
+        @media (min-width: 768px) {
+          font-size: 66px;
+          margin-bottom: -10px;
+        }
+        // Sm View
+        @media (max-width: 767px) and (min-width: 437px) {
+          font-size: 50px;
+          margin-bottom: -10px;
+        }
+        // xSm View
+        @media (max-width: 436px) {
+          font-size: 45px;
+          margin-bottom: -10px;
+        }
         color: white;
-        margin-bottom: -10px;
       }
     }
   }
@@ -176,8 +222,13 @@ nav {
 
 // Border Separation
 .bsep {
-  border-left: 1px solid #d3d3d3;
-  border-right: 1px solid #d3d3d3;
+  @media (min-width: 992px) {
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    border-right: 1px solid #d3d3d3;
+  }
 }
 // End Border Separation
 
