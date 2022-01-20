@@ -25,3 +25,24 @@ function btnOnClick3() {
     i.innerHTML = "- HIDE PACKAGE CONTENTS";
   }
 }
+
+$(".dropdown").click(function () {
+  // this == the link that was clicked
+
+  // if ($(this).text() == "Show Contents") {
+  //   $(this).text("Hide Contents")
+  // } else {
+  //   $(this).text("Show Contents")
+  // }
+
+  $this.text("+ Show Contents")
+    ? $this.text("- Hide Contents")
+    : $this.text("+ Show Contents");
+
+  // closest searches parent elements until it finds what you want it to find
+  // in this case we want it to find the parent w/ class "card"
+  var parent = $(this).closest(".card");
+  var content = parent.find(".dropdown-content");
+  // slide toggle is just like a show/hide w/ animation
+  content.slideToggle(100);
+});
