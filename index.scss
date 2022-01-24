@@ -33,12 +33,13 @@ nav {
   z-index: 2;
   .content {
     z-index: 2;
+    width: 100%;
     background-color: #ffffff;
   }
   @media (min-width: 992px) {
+    width: 150px;
     left: 0;
     position: fixed;
-    width: 150px;
     .mb50 {
       margin-bottom: 50px;
     }
@@ -97,14 +98,28 @@ nav {
     margin-right: auto;
   }
   position: absolute;
-  height: 40px;
+  height: 50px;
   z-index: 1;
-  top: -15px;
   width: 100%;
   background-color: black;
   text-align: center;
   color: yellow;
   border-radius: 0;
+  font-size: 14px;
+  .alert-x {
+    position: absolute;
+    right: 15%;
+    color: gray;
+    font-size: 18px;
+    top: 12px;
+  }
+  .alert-x:hover {
+    cursor: pointer;
+  }
+  .us-none {
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+  }
 }
 // End Alert
 
@@ -305,6 +320,20 @@ nav {
 // Footer
 .footer {
   background-color: #000000;
+  position: relative;
+  .segerlogo {
+    width: 250px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .segerbiglogo {
+    -webkit-filter: grayscale(100%) brightness(25%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(25%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 435px;
+  }
   .f-top {
     color: #ffffff;
   }
