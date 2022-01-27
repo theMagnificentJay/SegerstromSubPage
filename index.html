@@ -56,9 +56,9 @@
     </nav>
     <div class="push-right">
       <!-- End Nav -->
-      <div class="row alert">
+      <div id="alert_notif" class="row alert">
         <p>
-          <strong>Lorem Ipsum sit amet consectetur adipiscing elit. <span class="alert-x us-none">x</span></strong>
+          <strong>Lorem Ipsum sit amet consectetur adipiscing elit. <span class="alert-x us-none" onclick="removeAlert()">x</span></strong>
         </p>
       </div>
       <!-- Header -->
@@ -164,7 +164,8 @@
               </div>
             </div>
             <!-- Collapsable -->
-            <div>
+            <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="accordion-body">
               <div class="row">
                 <p class="separator fs-5 mt-4 mb-5">
                   Shows Included in This Package
@@ -448,7 +449,8 @@
               <!-- Collapsable Button -->
             </div>
           </div>
-          <div class="row see-package">+ SEE PACKAGE CONTENTS</div>
+          </div>
+          <div class="row see-package accordian-button dropdown" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">+ SEE PACKAGE CONTENTS</div>
         </div>
         <!-- End Collapsable Button -->
         <!-- End Collapsable -->
@@ -635,6 +637,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- Jquery Script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
     <!-- Personal Script -->
     <script src="script.js"></script>
     <!-- End Scripts -->
