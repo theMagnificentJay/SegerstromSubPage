@@ -24,6 +24,11 @@
 body {
   background-color: #f8f8f3;
   font-family: Metropolis;
+  overflow-x: hidden;
+  @media (max-width: 991px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 // End Body
 
@@ -130,8 +135,6 @@ nav {
   }
   @media (max-width: 991px) {
     margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 // End Push Right
