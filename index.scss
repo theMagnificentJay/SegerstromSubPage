@@ -38,10 +38,6 @@ html::-webkit-scrollbar {
 body {
   background-color: #f8f8f3;
   font-family: Metropolis;
-  @media (max-width: 991px) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 // End Body
 
