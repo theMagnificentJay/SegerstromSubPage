@@ -127,6 +127,8 @@ nav .content {
 @media (max-width: 991px) {
   .push-right {
     margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
