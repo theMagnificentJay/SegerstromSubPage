@@ -37,3 +37,24 @@ script.js has an animation for the expanding of the accordian however I am unsur
 ### Footer / ASL
 
 No color for the footer map pin and asl img (both appear gray) and not orange and purple (respectively) when giving the img a color overlay it just applies an overlay to the element and looked goofy as it was just a square of transparent color.
+
+### Overflow / Scrollbars
+
+The following code is live but not seeming to work when hosted on github.
+
+```
+// HTML
+html {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+// End HTML
+```
