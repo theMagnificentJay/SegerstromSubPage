@@ -30,17 +30,17 @@ I left comments throughout the project, they don't describe detail but do descri
 
 Navbar has a responsive issue where when in smaller/est view the nav icons group in a unwanted way.
 
-### Accordian
+### ~~Accordian~~
 
-script.js has an animation for the expanding of the accordian however I am unsure if it actually animates. I see little difference when that part of the code is commented out.
+~~script.js has an animation for the expanding of the accordian however I am unsure if it actually animates. I see little difference when that part of the code is commented out.~~
 
 ### Footer / ASL
 
 No color for the footer map pin and asl img (both appear gray) and not orange and purple (respectively) when giving the img a color overlay it just applies an overlay to the element and looked goofy as it was just a square of transparent color.
 
-### Overflow / Scrollbars
+### ~~Overflow / Scrollbars~~
 
-The following code is live but not seeming to work when hosted on github.
+~~The following code is live but not seeming to work when hosted on github.~~
 
 ```
 // HTML
@@ -59,11 +59,11 @@ html::-webkit-scrollbar {
 // End HTML
 ```
 
-### Code Review Notes
+## Code Review Notes
 
-- `row-md` and `row-sm` are not valid bootstrap classes
+- [x] `row-md` and `row-sm` are not valid bootstrap classes
 
-- jquery script reference before bootstrap script reference
+- [x] jquery script reference before bootstrap script reference
 
 ```
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
@@ -77,6 +77,8 @@ html::-webkit-scrollbar {
     <script src="script.js"></script>
 ```
 
-- So in the following order: jquery script, bootstrap script, and personal script
+- [x] So in the following order: jquery script, bootstrap script, and personal script
 
-- footer img and content z-index
+- [x] footer img and content z-index
+
+_Corrections made to all items in Code Review Notes_
