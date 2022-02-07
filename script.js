@@ -5,12 +5,16 @@ function removeAlert() {
 $(document).ready(function () {
   $(".dropdown").click(function () {
     // console.log("click");
+
+    let hide = "- HIDE PACKAGE CONTENTS";
+    let see = "+ SEE PACKAGE CONTENTS";
+
     // this == the link that was clicked
 
-    if ($(this).text() == "+ SEE PACKAGE CONTENTS") {
-      $(this).text("- HIDE PACKAGE CONTENTS");
+    if ($(this).text() == hide) {
+      $(this).text(see);
     } else {
-      $(this).text("+ SEE PACKAGE CONTENTS");
+      $(this).text(hide);
     }
 
     // closest searches parent elements until it finds what you want it to find

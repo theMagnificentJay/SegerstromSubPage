@@ -342,6 +342,9 @@ nav {
 .footer {
   background-color: #000000;
   position: relative;
+  .f-content {
+    z-index: 1;
+  }
   .segerlogo {
     width: 250px;
     padding-top: 60px;
@@ -354,6 +357,7 @@ nav {
     top: 0;
     right: 0;
     width: 435px;
+    z-index: 0;
   }
   .f-top {
     color: #ffffff;
